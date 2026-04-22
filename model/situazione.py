@@ -3,10 +3,10 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Situazione:
-    localita: str
-    data: datetime.date
-    umidita: int
+class SituazioneDTO:
+    Localita: str
+    Data: datetime.date
+    Umidita: int
 
     def __eq__(self, other):
         return self.localita == other.localita and self.data == other.data

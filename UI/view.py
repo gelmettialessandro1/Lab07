@@ -38,8 +38,7 @@ class View(ft.UserControl):
                                             ft.dropdown.Option(key="12", text="dicembre"),],
                                    label="mese",
                                    width=200,
-                                   hint_text="Selezionare un mese",
-                                   on_change=self._controller.read_mese)
+                                   hint_text="Selezionare un mese")
 
         self.btn_umidita = ft.ElevatedButton(text="Umidità media",
                                              tooltip="Verifica l'umidità media per città, nel mese selezionato",
